@@ -2,6 +2,9 @@
 
 - [卷頭說明](./README.md)
 - [每日一問](./common-questions.md)
+- [置頂精華](./pinned/README.md)
+  - [Telegram 使用教學](./pinned/telegram-tutorial.md)
+  - [常用網站連結](./pinned/commonly-used-websites.md)
 - [2020 年第 35 週 (8/24~8/30)](./2020-week35/README.md)
   - [Eric 大的 CDN 分享](./2020-week35/eric-cdn-share.md)
   - [eToro 出金分享](./2020-week35/etoro-cash-out.md)

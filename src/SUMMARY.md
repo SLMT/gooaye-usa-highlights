@@ -14,3 +14,4 @@
   - [主委：選前若見到修正就要先跑了](./2020-week35/run-when-see-drop.md)
   - [IB 好處](./2020-week35/good-for-ib.md)
   - [主委：創新高絕對不賣 & BIGC](./2020-week35/dont-sell-when-high.md)
+  - [DOCU](./2020-week35/docu.md)

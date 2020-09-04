@@ -10,4 +10,4 @@
 
 線上電子書網址：TODO
 
-原始碼 repository 網址：
+原始碼 repository 網址：[https://github.com/SLMT/gooaye-usa-highlights](https://github.com/SLMT/gooaye-usa-highlights)

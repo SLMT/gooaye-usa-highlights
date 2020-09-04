@@ -7,7 +7,7 @@ title = "股癌美股夜貓仔精華"
 
 [output.html]
 no-section-label = true
-git-repository-url = "https://test"
+git-repository-url = "https://github.com/SLMT/gooaye-usa-highlights"
 
 [output.html.fold]
 enable = false

@@ -11,4 +11,8 @@
 - [FT 出金手續費](./ft-cash-out.md)
 - [ETF 避險與債券](./etf-bonds.md)
 - [電匯到國外券商](./transfer-money.md)
+- [SPOT](./spot.md)
 - [9/3 美股崩盤之鮪魚又爆炸啦](./0903-big-drop-etoro.md)
+- [非農與 ADP 就業的差別](./adp.md)
+- [TQQQ vs NVDA](./tqqq-vs-nvda.md)
+- [TSLA 拆分後分析](./tsla-split.md)

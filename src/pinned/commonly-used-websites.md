@@ -17,3 +17,13 @@
 <https://docs.google.com/spreadsheets/d/1rdNe1pg_2MdNL8BsfhE3ZpYIjFAKN2RnLmKwmpQxrzI/edit#gid=0>
 
 由股癌討論區上的眾人合力撰寫的筆記
+
+## 財報公佈時程
+
+<https://www.earningswhispers.com>
+
+提供財報公佈時程等資訊
+
+## 股票研究軟體
+
+<https://simplywall.st/>

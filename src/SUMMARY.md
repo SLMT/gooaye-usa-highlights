@@ -15,3 +15,8 @@
   - [IB 好處](./2020-week35/good-for-ib.md)
   - [主委：創新高絕對不賣 & BIGC](./2020-week35/dont-sell-when-high.md)
   - [DOCU](./2020-week35/docu.md)
+  - [ROST](./2020-week35/rost.md)
+  - [FT 現金購買力與現金結餘的差別？](./2020-week35/ft-buy-power.md)
+  - [本週被提及的標的](./2020-week35/symbols.md)
+  - [NVDA 的優勢](./2020-week35/nvda-advantages.md)
+  - [財報怎麼看](./2020-week35/how-to-read-report.md)

@@ -1,8 +1,8 @@
 # Summary
 
 - [卷頭說明](./README.md)
-- [每日一問](./common-questions.md)
 - [置頂精華](./pinned/README.md)
+  - [每日一問](./pinned/common-questions.md)
   - [Telegram 使用教學](./pinned/telegram-tutorial.md)
   - [常用網站連結](./pinned/commonly-used-websites.md)
 - [2020 年第 35 週 (8/24~8/30)](./2020-week35/README.md)

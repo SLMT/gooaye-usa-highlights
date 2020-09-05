@@ -27,3 +27,21 @@
 ## 股票研究軟體
 
 <https://simplywall.st/>
+
+## 財經 M 平方
+
+<https://www.macromicro.me/macro>
+
+M 大的財經情報分析
+
+## 美股軍師
+
+<https://www.beyondfang.com>
+
+美股軍師的個人買賣經驗分享
+
+## 綠角財經筆記
+
+<http://greenhornfinancefootnote.blogspot.com/>
+
+綠角的投資相關分享

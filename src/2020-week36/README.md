@@ -16,3 +16,4 @@
 - [非農與 ADP 就業的差別](./adp.md)
 - [TQQQ vs NVDA](./tqqq-vs-nvda.md)
 - [TSLA 拆分後分析](./tsla-split.md)
+- [主委：VOO 沒特斯拉](./vti-or-voo.md)

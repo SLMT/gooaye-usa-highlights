@@ -20,6 +20,7 @@
   - [非農與 ADP 就業的差別](./2020-week36/adp.md)
   - [TQQQ vs NVDA](./2020-week36/tqqq-vs-nvda.md)
   - [TSLA 拆分後分析](./2020-week36/tsla-split.md)
+  - [主委：VOO 沒特斯拉](./2020-week36/vti-or-voo.md)
 - [2020 年第 35 週 (8/24~8/30)](./2020-week35/README.md)
   - [Eric 大的 CDN 分享](./2020-week35/eric-cdn-share.md)
   - [eToro 出金分享](./2020-week35/etoro-cash-out.md)

@@ -26,6 +26,12 @@ M 大的財經情報分析
 
 綠角的投資相關分享
 
+## 股癌大分享
+
+### 股癌書單
+
+[Evernote - 股癌書單](https://www.evernote.com/shard/s706/client/snv?noteGuid=a0556273-7a2b-9e6b-6d51-33e2c856e353&noteKey=94725ec975a01bbf3cedb6db1b378dec&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs706%2Fsh%2Fa0556273-7a2b-9e6b-6d51-33e2c856e353%2F94725ec975a01bbf3cedb6db1b378dec&title=%25E8%2582%25A1%25E7%2599%258C%25E6%259B%25B8%25E5%2596%25AE%2528%25E5%25B0%2587%25E6%258C%2581%25E7%25BA%258C%25E6%259B%25B4%25E6%2596%25B0%25EF%25BC%258C%25E6%259C%2580%25E6%2596%25B0%25E7%25BD%25AE%25E9%25A0%2582%2529)
+
 ## 群友筆記
 
 ### Medium - 就是筆記

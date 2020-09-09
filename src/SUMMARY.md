@@ -9,6 +9,8 @@
   - [CRWD 財報分享](./2020-week37/crwd-report.md)
   - [Joe Budden 宣布與 Spotify 解除合約](./2020-week37/joe-budden-vs-spotify.md)
   - [跌的時候該空嗎？](./2020-week37/short-when-dropping.md)
+  - [Slack](./2020-week37/slack.md)
+  - [群友分享部份美股今年價格重點變化](./2020-week37/sharing-some-important-trends.md)
 - [2020 年第 36 週 (8/31~9/06)](./2020-week36/README.md)
   - [Graphcore](./2020-week36/graphcore.md)
   - [總體經濟](./2020-week36/macroeconomics.md)

@@ -1,5 +1,7 @@
 # NVDIA 拿下 ARM 對 Intel 影響
 
+原討論串開頭：<https://t.me/GooayeUSA/141933>
+
 SamLin YSL, [15.09.20 21:58]
 
 > NVIDIA 拿下 Arm ，蘋果與高通或許有點介意，但受傷的可能是英特爾  

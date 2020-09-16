@@ -8,6 +8,7 @@
 - [2020 年第 38 週 (9/14~9/20)](./2020-week38/README.md)
   - [HON](./2020-week38/hon.md)
   - [NVDIA 拿下 ARM 對 Intel 影響](./2020-week38/nvidia-arm-intel.md)
+  - [影像辨識 vs Lidar](./2020-week38/video-recon-vs-lidar.md)
 - [2020 年第 37 週 (9/07~9/13)](./2020-week37/README.md)
   - [CRWD 財報分享](./2020-week37/crwd-report.md)
   - [Joe Budden 宣布與 Spotify 解除合約](./2020-week37/joe-budden-vs-spotify.md)

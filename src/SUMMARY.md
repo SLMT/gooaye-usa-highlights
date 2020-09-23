@@ -5,6 +5,8 @@
   - [每日一問](./pinned/common-questions.md)
   - [Telegram 使用教學](./pinned/telegram-tutorial.md)
   - [常用網站連結](./pinned/commonly-used-websites.md)
+- [2020 年第 39 週 (9/21~9/27)](./2020-week39/README.md)
+  - [Unity 遊戲引擎優勢](./2020-week39/unity-advantages.md)
 - [2020 年第 38 週 (9/14~9/20)](./2020-week38/README.md)
   - [HON](./2020-week38/hon.md)
   - [NVDIA 拿下 ARM 對 Intel 影響](./2020-week38/nvidia-arm-intel.md)

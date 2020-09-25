@@ -12,6 +12,10 @@
 
 討論串以主題的方式分類，並依照發生的時間點放在各週的章節內。
 
+## 漏了甚麼？
+
+最近越來越沒空看大家的討論，討論區也越來越多人，很難全部追蹤發生甚麼事情。 如果我有漏掉甚麼，大家又希望我收錄的話，請隨時在 Telegram 群組用 `@smallmountain` 呼叫我，請我收錄某些特定討論串。 如果我評估後覺得符合我收錄標準的話，就會加入這份筆記中~
+
 ## 有問題？
 
 有任何問題歡迎有 GitHub 帳號的人在[此 repository 的 issue 處](https://github.com/SLMT/gooaye-usa-highlights/issues)發問，或者在股癌的美股 Telegram 群組以 `@smallmountain` 呼叫我~

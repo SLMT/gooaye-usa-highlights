@@ -48,7 +48,7 @@ M 大的財經情報分析
 
 ### Google Sheet - ARK 交易紀錄
 
-<https://docs.google.com/spreadsheets/d/1bnfrrVwVsm3i3cB3SnU7-7eGjE3xkFqr8UZGRbh4s24/edit?usp=sharing>
+<https://docs.google.com/spreadsheets/d/1BaEvPobN-sftnTMSd_XzVdWQPBkKgCCMmodqLnVeWME>
 
 由 Mick 大整理的 ARK 近期交易紀錄。
 
@@ -65,3 +65,9 @@ M 大的財經情報分析
 ### 股票研究軟體
 
 <https://simplywall.st/>
+
+### Datanyze - Market Share
+
+<https://www.datanyze.com/market-share>
+
+提供各公司市場佔額的資訊

@@ -1,35 +1,29 @@
 <!DOCTYPE HTML>
-<html lang="zh-TW" class="sidebar-visible no-js light">
+<html lang="zh-TW" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>SHLL - 股癌美股夜貓仔精華</title>
-        
-        
 
 
         <!-- Custom HTML head -->
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103835191-1"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YYCC58ZGW"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
-
-          gtag('config', 'UA-103835191-1');
+        
+          gtag('config', 'G-1YYCC58ZGW', {
+            'content_group': 'gooaye-usa-highlights'
+          });
         </script>
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="../favicon.svg">
-        
-        
         <link rel="shortcut icon" href="../favicon.png">
-        
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
@@ -37,9 +31,7 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="../fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
@@ -47,19 +39,20 @@
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
-    </head>
-    <body>
+
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
-
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -75,61 +68,66 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            html.classList.add("js");
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
+            sidebar_toggle.checked = sidebar === 'visible';
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">卷頭說明</a></li><li class="chapter-item expanded "><a href="../pinned/index.html">置頂精華</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pinned/common-questions.html">每日一問</a></li><li class="chapter-item expanded "><a href="../pinned/telegram-tutorial.html">Telegram 使用教學</a></li><li class="chapter-item expanded "><a href="../pinned/commonly-used-websites.html">常用網站連結</a></li><li class="chapter-item expanded "><a href="../pinned/wtf-it-is.html">J 是啥？</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week41/index.html">2020 年第 41 週 (10/5~10/11)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week41/sell-growing-stock.html">停利飆股方式分享</a></li><li class="chapter-item expanded "><a href="../2020-week41/pton.html">PTON</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week39/index.html">2020 年第 39 週 (9/21~9/27)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week39/unity-advantages.html">Unity 遊戲引擎優勢</a></li><li class="chapter-item expanded "><a href="../2020-week39/ft-to-td.html">FT 轉 TD</a></li><li class="chapter-item expanded "><a href="../2020-week39/joyce-share-rds.html">Joyce 大分享 RDS 經驗</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week38/index.html">2020 年第 38 週 (9/14~9/20)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week38/hon.html">HON</a></li><li class="chapter-item expanded "><a href="../2020-week38/nvidia-arm-intel.html">NVDIA 拿下 ARM 對 Intel 影響</a></li><li class="chapter-item expanded "><a href="../2020-week38/video-recon-vs-lidar.html">影像辨識 vs Lidar</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week37/index.html">2020 年第 37 週 (9/07~9/13)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week37/crwd-report.html">CRWD 財報分享</a></li><li class="chapter-item expanded "><a href="../2020-week37/joe-budden-vs-spotify.html">Joe Budden 宣布與 Spotify 解除合約</a></li><li class="chapter-item expanded "><a href="../2020-week37/short-when-dropping.html">跌的時候該空嗎？</a></li><li class="chapter-item expanded "><a href="../2020-week37/slack.html">Slack</a></li><li class="chapter-item expanded "><a href="../2020-week37/sharing-some-important-trends.html">群友分享部份美股今年價格重點變化</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week36/index.html">2020 年第 36 週 (8/31~9/06)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week36/graphcore.html">Graphcore</a></li><li class="chapter-item expanded "><a href="../2020-week36/macroeconomics.html">總體經濟</a></li><li class="chapter-item expanded "><a href="../2020-week36/marijuana.html">大麻股標的</a></li><li class="chapter-item expanded "><a href="../2020-week36/all-buy-sp500.html">每個人都買 S&amp;P 500 會發生啥事？</a></li><li class="chapter-item expanded "><a href="../2020-week36/shll.html" class="active">SHLL</a></li><li class="chapter-item expanded "><a href="../2020-week36/sub-brokerage.html">複委託手續費</a></li><li class="chapter-item expanded "><a href="../2020-week36/ft-cash-out.html">FT 出金手續費</a></li><li class="chapter-item expanded "><a href="../2020-week36/etf-bonds.html">ETF 避險與債券</a></li><li class="chapter-item expanded "><a href="../2020-week36/transfer-money.html">電匯到國外券商</a></li><li class="chapter-item expanded "><a href="../2020-week36/spot.html">SPOT</a></li><li class="chapter-item expanded "><a href="../2020-week36/0903-big-drop-etoro.html">9/3 美股崩盤之鮪魚又爆炸啦</a></li><li class="chapter-item expanded "><a href="../2020-week36/adp.html">非農與 ADP 就業的差別</a></li><li class="chapter-item expanded "><a href="../2020-week36/tqqq-vs-nvda.html">TQQQ vs NVDA</a></li><li class="chapter-item expanded "><a href="../2020-week36/tsla-split.html">TSLA 拆分後分析</a></li><li class="chapter-item expanded "><a href="../2020-week36/vti-or-voo.html">主委：VOO 沒特斯拉</a></li></ol></li><li class="chapter-item expanded "><a href="../2020-week35/index.html">2020 年第 35 週 (8/24~8/30)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2020-week35/eric-cdn-share.html">Eric 大的 CDN 分享</a></li><li class="chapter-item expanded "><a href="../2020-week35/etoro-cash-out.html">eToro 出金分享</a></li><li class="chapter-item expanded "><a href="../2020-week35/td-open.html">TD 開戶</a></li><li class="chapter-item expanded "><a href="../2020-week35/us-citibank.html">台灣人在美國花旗開戶</a></li><li class="chapter-item expanded "><a href="../2020-week35/tracking-earning.html">如何追蹤長期績效</a></li><li class="chapter-item expanded "><a href="../2020-week35/run-when-see-drop.html">主委：選前若見到修正就要先跑了</a></li><li class="chapter-item expanded "><a href="../2020-week35/good-for-ib.html">IB 好處</a></li><li class="chapter-item expanded "><a href="../2020-week35/dont-sell-when-high.html">主委：創新高絕對不賣 &amp; BIGC</a></li><li class="chapter-item expanded "><a href="../2020-week35/docu.html">DOCU</a></li><li class="chapter-item expanded "><a href="../2020-week35/rost.html">ROST</a></li><li class="chapter-item expanded "><a href="../2020-week35/ft-buy-power.html">FT 現金購買力與現金結餘的差別？</a></li><li class="chapter-item expanded "><a href="../2020-week35/symbols.html">本週被提及的標的</a></li><li class="chapter-item expanded "><a href="../2020-week35/nvda-advantages.html">NVDA 的優勢</a></li><li class="chapter-item expanded "><a href="../2020-week35/how-to-read-report.html">財報怎麼看</a></li></ol></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">股癌美股夜貓仔精華</h1>
@@ -138,18 +136,16 @@
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
                         <a href="https://github.com/SLMT/gooaye-usa-highlights" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
+
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -157,10 +153,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -170,7 +165,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#shll" id="shll">SHLL</a></h1>
+                        <h1 id="shll"><a class="header" href="#shll">SHLL</a></h1>
 <p>原討論串開頭：https://t.me/GooayeUSA/117215</p>
 <p>Ricky Peng, [02.09.20 22:49]</p>
 <blockquote>
@@ -189,17 +184,13 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="../2020-week36/all-buy-sp500.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
 
-                        
-                            <a rel="next" href="../2020-week36/sub-brokerage.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../2020-week36/sub-brokerage.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -207,49 +198,36 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="../2020-week36/all-buy-sp500.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
 
-                
-                    <a rel="next" href="../2020-week36/sub-brokerage.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../2020-week36/sub-brokerage.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
 
+    </div>
     </body>
 </html>

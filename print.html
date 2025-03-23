@@ -1,37 +1,30 @@
 <!DOCTYPE HTML>
-<html lang="zh-TW" class="sidebar-visible no-js light">
+<html lang="zh-TW" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>股癌美股夜貓仔精華</title>
-        
-        <meta name="robots" content="noindex" />
-        
-        
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103835191-1"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YYCC58ZGW"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
-
-          gtag('config', 'UA-103835191-1');
+        
+          gtag('config', 'G-1YYCC58ZGW', {
+            'content_group': 'gooaye-usa-highlights'
+          });
         </script>
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
@@ -39,9 +32,7 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -49,19 +40,20 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
-    </head>
-    <body>
+
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
-
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -77,61 +69,66 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
-            html.classList.remove('no-js')
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            html.classList.add("js");
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
+            sidebar_toggle.checked = sidebar === 'visible';
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">卷頭說明</a></li><li class="chapter-item expanded "><a href="pinned/index.html">置頂精華</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pinned/common-questions.html">每日一問</a></li><li class="chapter-item expanded "><a href="pinned/telegram-tutorial.html">Telegram 使用教學</a></li><li class="chapter-item expanded "><a href="pinned/commonly-used-websites.html">常用網站連結</a></li><li class="chapter-item expanded "><a href="pinned/wtf-it-is.html">J 是啥？</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week41/index.html">2020 年第 41 週 (10/5~10/11)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week41/sell-growing-stock.html">停利飆股方式分享</a></li><li class="chapter-item expanded "><a href="2020-week41/pton.html">PTON</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week39/index.html">2020 年第 39 週 (9/21~9/27)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week39/unity-advantages.html">Unity 遊戲引擎優勢</a></li><li class="chapter-item expanded "><a href="2020-week39/ft-to-td.html">FT 轉 TD</a></li><li class="chapter-item expanded "><a href="2020-week39/joyce-share-rds.html">Joyce 大分享 RDS 經驗</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week38/index.html">2020 年第 38 週 (9/14~9/20)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week38/hon.html">HON</a></li><li class="chapter-item expanded "><a href="2020-week38/nvidia-arm-intel.html">NVDIA 拿下 ARM 對 Intel 影響</a></li><li class="chapter-item expanded "><a href="2020-week38/video-recon-vs-lidar.html">影像辨識 vs Lidar</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week37/index.html">2020 年第 37 週 (9/07~9/13)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week37/crwd-report.html">CRWD 財報分享</a></li><li class="chapter-item expanded "><a href="2020-week37/joe-budden-vs-spotify.html">Joe Budden 宣布與 Spotify 解除合約</a></li><li class="chapter-item expanded "><a href="2020-week37/short-when-dropping.html">跌的時候該空嗎？</a></li><li class="chapter-item expanded "><a href="2020-week37/slack.html">Slack</a></li><li class="chapter-item expanded "><a href="2020-week37/sharing-some-important-trends.html">群友分享部份美股今年價格重點變化</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week36/index.html">2020 年第 36 週 (8/31~9/06)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week36/graphcore.html">Graphcore</a></li><li class="chapter-item expanded "><a href="2020-week36/macroeconomics.html">總體經濟</a></li><li class="chapter-item expanded "><a href="2020-week36/marijuana.html">大麻股標的</a></li><li class="chapter-item expanded "><a href="2020-week36/all-buy-sp500.html">每個人都買 S&amp;P 500 會發生啥事？</a></li><li class="chapter-item expanded "><a href="2020-week36/shll.html">SHLL</a></li><li class="chapter-item expanded "><a href="2020-week36/sub-brokerage.html">複委託手續費</a></li><li class="chapter-item expanded "><a href="2020-week36/ft-cash-out.html">FT 出金手續費</a></li><li class="chapter-item expanded "><a href="2020-week36/etf-bonds.html">ETF 避險與債券</a></li><li class="chapter-item expanded "><a href="2020-week36/transfer-money.html">電匯到國外券商</a></li><li class="chapter-item expanded "><a href="2020-week36/spot.html">SPOT</a></li><li class="chapter-item expanded "><a href="2020-week36/0903-big-drop-etoro.html">9/3 美股崩盤之鮪魚又爆炸啦</a></li><li class="chapter-item expanded "><a href="2020-week36/adp.html">非農與 ADP 就業的差別</a></li><li class="chapter-item expanded "><a href="2020-week36/tqqq-vs-nvda.html">TQQQ vs NVDA</a></li><li class="chapter-item expanded "><a href="2020-week36/tsla-split.html">TSLA 拆分後分析</a></li><li class="chapter-item expanded "><a href="2020-week36/vti-or-voo.html">主委：VOO 沒特斯拉</a></li></ol></li><li class="chapter-item expanded "><a href="2020-week35/index.html">2020 年第 35 週 (8/24~8/30)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2020-week35/eric-cdn-share.html">Eric 大的 CDN 分享</a></li><li class="chapter-item expanded "><a href="2020-week35/etoro-cash-out.html">eToro 出金分享</a></li><li class="chapter-item expanded "><a href="2020-week35/td-open.html">TD 開戶</a></li><li class="chapter-item expanded "><a href="2020-week35/us-citibank.html">台灣人在美國花旗開戶</a></li><li class="chapter-item expanded "><a href="2020-week35/tracking-earning.html">如何追蹤長期績效</a></li><li class="chapter-item expanded "><a href="2020-week35/run-when-see-drop.html">主委：選前若見到修正就要先跑了</a></li><li class="chapter-item expanded "><a href="2020-week35/good-for-ib.html">IB 好處</a></li><li class="chapter-item expanded "><a href="2020-week35/dont-sell-when-high.html">主委：創新高絕對不賣 &amp; BIGC</a></li><li class="chapter-item expanded "><a href="2020-week35/docu.html">DOCU</a></li><li class="chapter-item expanded "><a href="2020-week35/rost.html">ROST</a></li><li class="chapter-item expanded "><a href="2020-week35/ft-buy-power.html">FT 現金購買力與現金結餘的差別？</a></li><li class="chapter-item expanded "><a href="2020-week35/symbols.html">本週被提及的標的</a></li><li class="chapter-item expanded "><a href="2020-week35/nvda-advantages.html">NVDA 的優勢</a></li><li class="chapter-item expanded "><a href="2020-week35/how-to-read-report.html">財報怎麼看</a></li></ol></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">股癌美股夜貓仔精華</h1>
@@ -140,18 +137,16 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
                         <a href="https://github.com/SLMT/gooaye-usa-highlights" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
+
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -159,10 +154,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -172,110 +166,110 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#股癌美股夜貓仔精華" id="股癌美股夜貓仔精華">股癌美股夜貓仔精華</a></h1>
+                        <h1 id="股癌美股夜貓仔精華"><a class="header" href="#股癌美股夜貓仔精華">股癌美股夜貓仔精華</a></h1>
 <p>本書節選了「<a href="https://t.me/GooayeUSA">股癌美股夜貓仔</a>」Telegram 討論區中，個人認為值得注意的討論串。</p>
 <p>本書網址：<a href="https://www.slmt.tw/gooaye-usa-highlights/">https://www.slmt.tw/gooaye-usa-highlights/</a></p>
 <p>原始碼網址：<a href="https://github.com/SLMT/gooaye-usa-highlights">https://github.com/SLMT/gooaye-usa-highlights</a></p>
-<h2><a class="header" href="#開啟目錄" id="開啟目錄">開啟目錄</a></h2>
+<h2 id="開啟目錄"><a class="header" href="#開啟目錄">開啟目錄</a></h2>
 <p>注意畫面左側有目錄，但若使用行動裝置可能會因為畫面太小而收起來。 想要打開請按畫面左上角之中最左邊的按鈕。</p>
 <p>討論串以主題的方式分類，並依照發生的時間點放在各週的章節內。</p>
-<h2><a class="header" href="#漏了甚麼" id="漏了甚麼">漏了甚麼？</a></h2>
+<h2 id="漏了甚麼"><a class="header" href="#漏了甚麼">漏了甚麼？</a></h2>
 <p>最近越來越沒空看大家的討論，討論區也越來越多人，很難全部追蹤發生甚麼事情。 如果我有漏掉甚麼，大家又希望我收錄的話，請隨時在 Telegram 群組用 <code>@smallmountain</code> 呼叫我，請我收錄某些特定討論串。 如果我評估後覺得符合我收錄標準的話，就會加入這份筆記中~</p>
-<h2><a class="header" href="#有問題" id="有問題">有問題？</a></h2>
+<h2 id="有問題"><a class="header" href="#有問題">有問題？</a></h2>
 <p>有任何問題歡迎有 GitHub 帳號的人在<a href="https://github.com/SLMT/gooaye-usa-highlights/issues">此 repository 的 issue 處</a>發問，或者在股癌的美股 Telegram 群組以 <code>@smallmountain</code> 呼叫我~</p>
-<h2><a class="header" href="#節選方式" id="節選方式">節選方式</a></h2>
+<h2 id="節選方式"><a class="header" href="#節選方式">節選方式</a></h2>
 <p>目前是以我個人的喜好選擇內容，尚未有固定的選擇規則。</p>
 <p>若認為有該收錄的討論沒被收錄到，也可以在 issue 處詢問或者直接在 Telegram 上找我~</p>
-<h1><a class="header" href="#置頂精華" id="置頂精華">置頂精華</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="置頂精華"><a class="header" href="#置頂精華">置頂精華</a></h1>
 <ul>
 <li><a href="pinned/./common-questions.html">每日一問</a></li>
 <li><a href="pinned/./telegram-tutorial.html">Telegram 使用教學</a></li>
 <li><a href="pinned/./commonly-used-websites.html">常用網站連結</a></li>
 </ul>
-<h1><a class="header" href="#每日一問" id="每日一問">每日一問</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="每日一問"><a class="header" href="#每日一問">每日一問</a></h1>
 <p>來源：<a href="https://t.me/GooayeUSA/122293">https://t.me/GooayeUSA/122293</a></p>
-<h3><a class="header" href="#美股券商" id="美股券商">美股券商</a></h3>
+<h3 id="美股券商"><a class="header" href="#美股券商">美股券商</a></h3>
 <ul>
 <li>25000門檻 : 嘉信、IB</li>
 <li>無門檻 : FT、TD、ETORO</li>
 </ul>
-<h3><a class="header" href="#帳號" id="帳號">帳號</a></h3>
+<h3 id="帳號"><a class="header" href="#帳號">帳號</a></h3>
 <ul>
 <li>主委ETORO帳號不公開</li>
 <li>明燈LOVE GG帳號不公開</li>
 </ul>
-<h3><a class="header" href="#盤前盤後哪裡看" id="盤前盤後哪裡看">盤前盤後哪裡看</a></h3>
+<h3 id="盤前盤後哪裡看"><a class="header" href="#盤前盤後哪裡看">盤前盤後哪裡看</a></h3>
 <ul>
 <li>Investing</li>
 <li>富途牛牛</li>
 </ul>
-<h3><a class="header" href="#xxx可以買嗎" id="xxx可以買嗎">XXX可以買嗎</a></h3>
+<h3 id="xxx可以買嗎"><a class="header" href="#xxx可以買嗎">XXX可以買嗎</a></h3>
 <p>爽買就買、爽空就空</p>
-<h3><a class="header" href="#xxx價格會太高嗎" id="xxx價格會太高嗎">XXX價格會太高嗎</a></h3>
+<h3 id="xxx價格會太高嗎"><a class="header" href="#xxx價格會太高嗎">XXX價格會太高嗎</a></h3>
 <p>各位韭菜沒資格評論股價</p>
-<h3><a class="header" href="#xxx公司的代號是多少" id="xxx公司的代號是多少">XXX公司的代號是多少？</a></h3>
+<h3 id="xxx公司的代號是多少"><a class="header" href="#xxx公司的代號是多少">XXX公司的代號是多少？</a></h3>
 <p>你的瀏覽器壞掉了嗎？為什麼不先Google</p>
-<h1><a class="header" href="#telegram-使用教學" id="telegram-使用教學">Telegram 使用教學</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="telegram-使用教學"><a class="header" href="#telegram-使用教學">Telegram 使用教學</a></h1>
 <p>原文：<a href="https://t.me/GooayeUSA/110238">https://t.me/GooayeUSA/110238</a></p>
 <p>感謝 13 大大提供</p>
 <ol>
 <li>本群組有一分鐘一則訊息限制</li>
 <li>自己的訊息打錯可以長按選 Edit 修改內容。修改不受上述限制</li>
 <li>看到別人的訊息想要存下來，可以長按然後 Copy Link，或是 Forward 到 Save Messages</li>
-<li>提到股票代號時可以加個 $ 讓其他人可直接點擊搜尋，例如 $AAPL </li>
+<li>提到股票代號時可以加個 $ 讓其他人可直接點擊搜尋，例如 $AAPL</li>
 <li>把訊息往左滑可以回覆該則訊息，或長按選 Reply</li>
 <li>傳送圖片的時候可以同時附上文字說明，不然圖片跟訊息分兩則就得間隔一分鐘</li>
 <li>TG 的中文搜尋頗差，發訊用 hashtag 以後比較好找，例如 #匯款</li>
 </ol>
-<h1><a class="header" href="#常用網站連結" id="常用網站連結">常用網站連結</a></h1>
-<h2><a class="header" href="#時事分析與投資標的分享" id="時事分析與投資標的分享">時事分析與投資標的分享</a></h2>
-<h3><a class="header" href="#股癌官網" id="股癌官網">股癌官網</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="常用網站連結"><a class="header" href="#常用網站連結">常用網站連結</a></h1>
+<h2 id="時事分析與投資標的分享"><a class="header" href="#時事分析與投資標的分享">時事分析與投資標的分享</a></h2>
+<h3 id="股癌官網"><a class="header" href="#股癌官網">股癌官網</a></h3>
 <p><a href="https://gooaye.com/">https://gooaye.com/</a></p>
 <p>不解釋</p>
-<h3><a class="header" href="#財經-m-平方" id="財經-m-平方">財經 M 平方</a></h3>
+<h3 id="財經-m-平方"><a class="header" href="#財經-m-平方">財經 M 平方</a></h3>
 <p><a href="https://www.macromicro.me/macro">https://www.macromicro.me/macro</a></p>
 <p>M 大的財經情報分析</p>
-<h3><a class="header" href="#美股軍師" id="美股軍師">美股軍師</a></h3>
+<h3 id="美股軍師"><a class="header" href="#美股軍師">美股軍師</a></h3>
 <p><a href="https://www.beyondfang.com">https://www.beyondfang.com</a></p>
 <p>美股軍師的個人買賣經驗分享</p>
-<h3><a class="header" href="#綠角財經筆記" id="綠角財經筆記">綠角財經筆記</a></h3>
+<h3 id="綠角財經筆記"><a class="header" href="#綠角財經筆記">綠角財經筆記</a></h3>
 <p><a href="http://greenhornfinancefootnote.blogspot.com/">http://greenhornfinancefootnote.blogspot.com/</a></p>
 <p>綠角的投資相關分享</p>
-<h2><a class="header" href="#股癌大分享" id="股癌大分享">股癌大分享</a></h2>
-<h3><a class="header" href="#股癌書單" id="股癌書單">股癌書單</a></h3>
+<h2 id="股癌大分享"><a class="header" href="#股癌大分享">股癌大分享</a></h2>
+<h3 id="股癌書單"><a class="header" href="#股癌書單">股癌書單</a></h3>
 <p><a href="https://www.evernote.com/shard/s706/client/snv?noteGuid=a0556273-7a2b-9e6b-6d51-33e2c856e353&amp;noteKey=94725ec975a01bbf3cedb6db1b378dec&amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs706%2Fsh%2Fa0556273-7a2b-9e6b-6d51-33e2c856e353%2F94725ec975a01bbf3cedb6db1b378dec&amp;title=%25E8%2582%25A1%25E7%2599%258C%25E6%259B%25B8%25E5%2596%25AE%2528%25E5%25B0%2587%25E6%258C%2581%25E7%25BA%258C%25E6%259B%25B4%25E6%2596%25B0%25EF%25BC%258C%25E6%259C%2580%25E6%2596%25B0%25E7%25BD%25AE%25E9%25A0%2582%2529">Evernote - 股癌書單</a></p>
-<h2><a class="header" href="#群友筆記" id="群友筆記">群友筆記</a></h2>
-<h3><a class="header" href="#medium---就是筆記" id="medium---就是筆記">Medium - 就是筆記</a></h3>
+<h2 id="群友筆記"><a class="header" href="#群友筆記">群友筆記</a></h2>
+<h3 id="medium---就是筆記"><a class="header" href="#medium---就是筆記">Medium - 就是筆記</a></h3>
 <p><a href="https://medium.com/%E5%B0%B1%E6%98%AF%E7%AD%86%E8%A8%98">https://medium.com/%E5%B0%B1%E6%98%AF%E7%AD%86%E8%A8%98</a></p>
 <p>紀錄 Dong Darren 聽股癌與財報狗 Podcast 的筆記</p>
-<h3><a class="header" href="#google-sheet---股癌美股夜貓仔共筆" id="google-sheet---股癌美股夜貓仔共筆">Google Sheet - 股癌美股夜貓仔共筆</a></h3>
+<h3 id="google-sheet---股癌美股夜貓仔共筆"><a class="header" href="#google-sheet---股癌美股夜貓仔共筆">Google Sheet - 股癌美股夜貓仔共筆</a></h3>
 <p><a href="https://docs.google.com/spreadsheets/d/1rdNe1pg_2MdNL8BsfhE3ZpYIjFAKN2RnLmKwmpQxrzI/edit#gid=0">https://docs.google.com/spreadsheets/d/1rdNe1pg_2MdNL8BsfhE3ZpYIjFAKN2RnLmKwmpQxrzI/edit#gid=0</a></p>
 <p>由股癌討論區上的眾人合力撰寫的筆記</p>
-<h3><a class="header" href="#google-sheet---ark-交易紀錄" id="google-sheet---ark-交易紀錄">Google Sheet - ARK 交易紀錄</a></h3>
+<h3 id="google-sheet---ark-交易紀錄"><a class="header" href="#google-sheet---ark-交易紀錄">Google Sheet - ARK 交易紀錄</a></h3>
 <p><a href="https://docs.google.com/spreadsheets/d/1BaEvPobN-sftnTMSd_XzVdWQPBkKgCCMmodqLnVeWME">https://docs.google.com/spreadsheets/d/1BaEvPobN-sftnTMSd_XzVdWQPBkKgCCMmodqLnVeWME</a></p>
 <p>由 Mick 大整理的 ARK 近期交易紀錄。</p>
 <p>來源：<a href="https://t.me/GooayeUSA/126097">https://t.me/GooayeUSA/126097</a></p>
-<h2><a class="header" href="#其他" id="其他">其他</a></h2>
-<h3><a class="header" href="#財報公佈時程" id="財報公佈時程">財報公佈時程</a></h3>
+<h2 id="其他"><a class="header" href="#其他">其他</a></h2>
+<h3 id="財報公佈時程"><a class="header" href="#財報公佈時程">財報公佈時程</a></h3>
 <p><a href="https://www.earningswhispers.com">https://www.earningswhispers.com</a></p>
 <p>提供財報公佈時程等資訊</p>
-<h3><a class="header" href="#股票研究軟體" id="股票研究軟體">股票研究軟體</a></h3>
+<h3 id="股票研究軟體"><a class="header" href="#股票研究軟體">股票研究軟體</a></h3>
 <p><a href="https://simplywall.st/">https://simplywall.st/</a></p>
-<h3><a class="header" href="#datanyze---market-share" id="datanyze---market-share">Datanyze - Market Share</a></h3>
+<h3 id="datanyze---market-share"><a class="header" href="#datanyze---market-share">Datanyze - Market Share</a></h3>
 <p><a href="https://www.datanyze.com/market-share">https://www.datanyze.com/market-share</a></p>
 <p>提供各公司市場佔額的資訊</p>
-<h1><a class="header" href="#j-是啥" id="j-是啥">J 是啥？</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="j-是啥"><a class="header" href="#j-是啥">J 是啥？</a></h1>
 <p>本篇文章整理了 Telegram 討論群上常被詢問是啥的東西</p>
-<h2><a class="header" href="#富途牛牛" id="富途牛牛">富途牛牛</a></h2>
+<h2 id="富途牛牛"><a class="header" href="#富途牛牛">富途牛牛</a></h2>
 <p><img src="pinned/./wtf-it-is/futunn.jpg" alt="" /></p>
 <p>來源：<a href="https://t.me/GooayeUSA/159363">https://t.me/GooayeUSA/159363</a></p>
-<h1><a class="header" href="#2020-年第-41-週-1051011" id="2020-年第-41-週-1051011">2020 年第 41 週 (10/5~10/11)</a></h1>
-<h2><a class="header" href="#本週收錄" id="本週收錄">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-41-週-1051011"><a class="header" href="#2020-年第-41-週-1051011">2020 年第 41 週 (10/5~10/11)</a></h1>
+<h2 id="本週收錄"><a class="header" href="#本週收錄">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week41/./sell-growing-stock.html">停利飆股方式分享</a></li>
 <li><a href="2020-week41/./pton.html">PTON</a></li>
 </ul>
-<h1><a class="header" href="#停利飆股方式分享" id="停利飆股方式分享">停利飆股方式分享</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="停利飆股方式分享"><a class="header" href="#停利飆股方式分享">停利飆股方式分享</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/187586">https://t.me/GooayeUSA/187586</a></p>
 <p>U t, [09.10.20 00:36]</p>
 <blockquote>
@@ -293,7 +287,7 @@
 <blockquote>
 <p>很不錯的方法，我是都會留個幾股作紀念</p>
 </blockquote>
-<h1><a class="header" href="#pton" id="pton">PTON</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pton"><a class="header" href="#pton">PTON</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/190341">https://t.me/GooayeUSA/190341</a></p>
 <p>Michael Pan, [10.10.20 03:39]</p>
 <blockquote>
@@ -357,14 +351,14 @@
 <blockquote>
 <p>趨勢對，加上疫情加速滲透率，硬體，軟體，內容，銷售全部自己做的商業模式，創造很好的用戶體驗，使得護城河很廣，最近推出平價版，更多人會買</p>
 </blockquote>
-<h1><a class="header" href="#2020-年第-39-週-921927" id="2020-年第-39-週-921927">2020 年第 39 週 (9/21~9/27)</a></h1>
-<h2><a class="header" href="#本週收錄-1" id="本週收錄-1">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-39-週-921927"><a class="header" href="#2020-年第-39-週-921927">2020 年第 39 週 (9/21~9/27)</a></h1>
+<h2 id="本週收錄-1"><a class="header" href="#本週收錄-1">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week39/./unity-advantages.html">Unity 遊戲引擎優勢</a></li>
 <li><a href="2020-week39/./ft-to-td.html">FT 轉 TD</a></li>
 <li><a href="2020-week39/./joyce-share-rds.html">Joyce 大分享 RDS 經驗</a></li>
 </ul>
-<h1><a class="header" href="#unity-遊戲引擎優勢" id="unity-遊戲引擎優勢">Unity 遊戲引擎優勢</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="unity-遊戲引擎優勢"><a class="header" href="#unity-遊戲引擎優勢">Unity 遊戲引擎優勢</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/153617">https://t.me/GooayeUSA/153617</a></p>
 <p>Tian, [22.09.20 09:44]</p>
 <blockquote>
@@ -662,7 +656,7 @@ Unity另外是使用上比較友善</p>
 </blockquote>
 <p>Alan, [22.09.20 10:23]</p>
 <blockquote>
-<p>想在手機上用Unreal就是想不開 除非開發公司超有錢做優化 不然根本跑不動= =&quot;</p>
+<p>想在手機上用Unreal就是想不開 除非開發公司超有錢做優化 不然根本跑不動= ="</p>
 </blockquote>
 <p>RJ C, [22.09.20 10:24]</p>
 <blockquote>
@@ -701,7 +695,7 @@ Unity另外是使用上比較友善</p>
 </blockquote>
 <p>Alan, [22.09.20 10:27]</p>
 <blockquote>
-<p>我是指優化成本不一樣 unity基本低消低很多 unreal很吃資源 
+<p>我是指優化成本不一樣 unity基本低消低很多 unreal很吃資源
 不是做不到 是成本不一樣 成本夠就可以考慮選unreal 成本不夠unreal就不會是選項</p>
 </blockquote>
 <p>RJ C, [22.09.20 10:27]</p>
@@ -823,7 +817,7 @@ Unity另外是使用上比較友善</p>
 <blockquote>
 <p>身為一個曾經唾棄unity,用openframework 去硬幹的互動工程師的感想，unity還是很好用的...........</p>
 </blockquote>
-<h1><a class="header" href="#ft-轉-td" id="ft-轉-td">FT 轉 TD</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ft-轉-td"><a class="header" href="#ft-轉-td">FT 轉 TD</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/157142">https://t.me/GooayeUSA/157142</a></p>
 <p>Eric Chuang, [24.09.20 00:51]</p>
 <blockquote>
@@ -850,7 +844,7 @@ Unity另外是使用上比較友善</p>
 <blockquote>
 <p>連轉完後面發股息都記得幫我轉了，很安心啊</p>
 </blockquote>
-<h1><a class="header" href="#joyce-大分享-rds-經驗" id="joyce-大分享-rds-經驗">Joyce 大分享 RDS 經驗</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="joyce-大分享-rds-經驗"><a class="header" href="#joyce-大分享-rds-經驗">Joyce 大分享 RDS 經驗</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/161038">https://t.me/GooayeUSA/161038</a></p>
 <p>gugu, [25.09.20 23:48]</p>
 <blockquote>
@@ -922,13 +916,13 @@ Unity另外是使用上比較友善</p>
 <blockquote>
 <p>不用那麼客氣😄 多少有點職業病，我做財務時都是處理很棘手的事，而且讀財報抓重點很快，比較能評斷一間公司財務體質的好壞，這對信仰有很大的加持作用。我覺得大家是真的可以考慮去上點基礎財務課，作為輔助工具</p>
 </blockquote>
-<h1><a class="header" href="#2020-年第-38-週-914920" id="2020-年第-38-週-914920">2020 年第 38 週 (9/14~9/20)</a></h1>
-<h2><a class="header" href="#本週收錄-2" id="本週收錄-2">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-38-週-914920"><a class="header" href="#2020-年第-38-週-914920">2020 年第 38 週 (9/14~9/20)</a></h1>
+<h2 id="本週收錄-2"><a class="header" href="#本週收錄-2">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week38/./hon.html">HON</a></li>
 <li><a href="2020-week38/./nvidia-arm-intel.html">NVDIA 拿下 ARM 對 Intel 影響</a></li>
 </ul>
-<h1><a class="header" href="#hon" id="hon">HON</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hon"><a class="header" href="#hon">HON</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/138677">https://t.me/GooayeUSA/138677</a></p>
 <p>Tako Tsai, [14.09.20 03:28]</p>
 <blockquote>
@@ -950,11 +944,11 @@ Unity另外是使用上比較友善</p>
 <blockquote>
 <p>Honeywell真的是很神奇的公司，售後服務超級爛，每年Boeing都會請各航空公司對各供應商做顧客滿意度調查，最後一名的一定是Honeywell 可是他東西還是賣得很好</p>
 </blockquote>
-<p>☆*:.｡.㊣菜雞豬是會射㊣.｡. :*☆, [14.09.20 10:55]</p>
+<p>☆<em>:.｡.㊣菜雞豬是會射㊣.｡. :</em>☆, [14.09.20 10:55]</p>
 <blockquote>
 <p>我覺得空氣清淨機不錯 就是耗材好貴</p>
 </blockquote>
-<h1><a class="header" href="#nvdia-拿下-arm-對-intel-影響" id="nvdia-拿下-arm-對-intel-影響">NVDIA 拿下 ARM 對 Intel 影響</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nvdia-拿下-arm-對-intel-影響"><a class="header" href="#nvdia-拿下-arm-對-intel-影響">NVDIA 拿下 ARM 對 Intel 影響</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/141933">https://t.me/GooayeUSA/141933</a></p>
 <p>SamLin YSL, [15.09.20 21:58]</p>
 <blockquote>
@@ -993,11 +987,11 @@ TSMC跟Intel的市值比較圖<br />
 我會把製造部門關掉<br />
 轉型為IC design house</p>
 </blockquote>
-<h1><a class="header" href="#影像辨識-vs-lidar" id="影像辨識-vs-lidar">影像辨識 vs Lidar</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="影像辨識-vs-lidar"><a class="header" href="#影像辨識-vs-lidar">影像辨識 vs Lidar</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/142448">https://t.me/GooayeUSA/142448</a></p>
 <p>Steve 🌰, [16.09.20 00:13]</p>
 <blockquote>
-<p>反向思考一下 如果現在的油車大廠在電動車領域幾乎都看不到特斯拉的車尾燈 </p>
+<p>反向思考一下 如果現在的油車大廠在電動車領域幾乎都看不到特斯拉的車尾燈</p>
 <p>那它最有可能的對手 會不會是google的無人駕駛技術LV5技術合作傳統車廠？</p>
 <p>神仙聯合把特斯拉拉下來</p>
 </blockquote>
@@ -1031,10 +1025,10 @@ TSMC跟Intel的市值比較圖<br />
 </blockquote>
 <p>JM Huang, [16.09.20 09:05]</p>
 <blockquote>
-<p>剛好看到忍不住想回, 
-lidar 不會可有可無, 未來十幾年內應該還是lidar+影像整合, 只是lidar進步空間還不如影像, </p>
-<p>lidar 只能做偵測物體的距離, 但是他的有效偵測距離比較遠, 感測器輸出的數據就直接是距離值, 影像要測距還要搞一堆算法, 所以lidar的反應時間比較快, </p>
-<p>影像雖然甚麼都可以做(包括行人行車路標辨識, 測距), 但是他的算力要求很高, 有效距離不如lidar, 或說有效距離要達到如lidar一樣, 影像解析度要很高(算力需求又要再更高) 還要加上車用的情境下又要求反應時間需要夠短, 所以不太可能不需要lidar </p>
+<p>剛好看到忍不住想回,
+lidar 不會可有可無, 未來十幾年內應該還是lidar+影像整合, 只是lidar進步空間還不如影像,</p>
+<p>lidar 只能做偵測物體的距離, 但是他的有效偵測距離比較遠, 感測器輸出的數據就直接是距離值, 影像要測距還要搞一堆算法, 所以lidar的反應時間比較快,</p>
+<p>影像雖然甚麼都可以做(包括行人行車路標辨識, 測距), 但是他的算力要求很高, 有效距離不如lidar, 或說有效距離要達到如lidar一樣, 影像解析度要很高(算力需求又要再更高) 還要加上車用的情境下又要求反應時間需要夠短, 所以不太可能不需要lidar</p>
 <p>也正因為算力需求高, 才會有人想說5G能不能實現滿足即時要求下進行雲端運算</p>
 </blockquote>
 <p>Ken Chen, [16.09.20 09:30]</p>
@@ -1080,7 +1074,7 @@ ar眼鏡什麼的</p>
 </blockquote>
 <p>george, [16.09.20 11:28]</p>
 <blockquote>
-<p>推一個 
+<p>推一個
 Lidar在測距上的地位真的還是滿難用影像取代，而且我認為就算力而言，可以處理影像轉3D的算力，來用Lidar算點雲是綽綽有餘</p>
 <p>未來應該還是工具箱模式做自駕吧  甚麼數據都收來算這樣XDDDD</p>
 </blockquote>
@@ -1160,8 +1154,8 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <blockquote>
 <p>那就看那條路線先成真囉</p>
 </blockquote>
-<h1><a class="header" href="#2020-年第-37-週-907913" id="2020-年第-37-週-907913">2020 年第 37 週 (9/07~9/13)</a></h1>
-<h2><a class="header" href="#本週收錄-3" id="本週收錄-3">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-37-週-907913"><a class="header" href="#2020-年第-37-週-907913">2020 年第 37 週 (9/07~9/13)</a></h1>
+<h2 id="本週收錄-3"><a class="header" href="#本週收錄-3">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week37/./crwd-report.html">CRWD 財報分享</a></li>
 <li><a href="2020-week37/./joe-budden-vs-spotify.html">Joe Budden 宣布與 Spotify 解除合約</a></li>
@@ -1169,18 +1163,18 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <li><a href="2020-week37/./slack.html">Slack</a></li>
 <li><a href="2020-week37/./sharing-some-important-trends.html">群友分享部份美股今年價格重點變化</a></li>
 </ul>
-<h1><a class="header" href="#crwd-財報分享" id="crwd-財報分享">CRWD 財報分享</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="crwd-財報分享"><a class="header" href="#crwd-財報分享">CRWD 財報分享</a></h1>
 <p>Telegram 連結：<a href="https://t.me/GooayeUSA/128657">https://t.me/GooayeUSA/128657</a></p>
 <p>【T986】美股投資客_ Jeff, [07.09.20 22:00]</p>
 <p><img src="2020-week37/./crwd-report-001.jpg" alt="" /></p>
 <blockquote>
 <p>CRWD此季財報文章，分享給各位參考😀</p>
 </blockquote>
-<h1><a class="header" href="#joe-budden-宣布與-spotify-解除合約" id="joe-budden-宣布與-spotify-解除合約">Joe Budden 宣布與 Spotify 解除合約</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="joe-budden-宣布與-spotify-解除合約"><a class="header" href="#joe-budden-宣布與-spotify-解除合約">Joe Budden 宣布與 Spotify 解除合約</a></h1>
 <p>Telegram 連結：<a href="https://t.me/GooayeUSA/128724">https://t.me/GooayeUSA/128724</a></p>
 <p>Wayne, [07.09.20 23:56]</p>
 <p><img src="2020-week37/./joe-budden-vs-spotify-001.jpg" alt="" /></p>
-<h1><a class="header" href="#跌的時候該空嗎" id="跌的時候該空嗎">跌的時候該空嗎？</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="跌的時候該空嗎"><a class="header" href="#跌的時候該空嗎">跌的時候該空嗎？</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/129483">https://t.me/GooayeUSA/129483</a></p>
 <p>Rave, [08.09.20 18:47]</p>
 <blockquote>
@@ -1195,7 +1189,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <p>放空跟做多差很多
 你放空漲多的可能一兩根就要回補甚至當天要補
 不適合作為避險
-還有放空風險可以是無限大無限向上嘎 
+還有放空風險可以是無限大無限向上嘎
 避險應該不會用這種方案</p>
 </blockquote>
 <p>硬頸 冰鳥, [08.09.20 19:04]</p>
@@ -1227,7 +1221,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 </blockquote>
 <p>MK H, [08.09.20 19:40]</p>
 <blockquote>
-<p>避險就幾招 </p>
+<p>避險就幾招</p>
 <p>減碼, VXX, 做空對應比例部位期貨</p>
 <p>99%的人只需要做到減碼就好</p>
 </blockquote>
@@ -1243,7 +1237,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <blockquote>
 <p>不管是做多做空，連續幾天的單方向走勢一旦反轉，它的implied volatility會銳減導致價格大跌。除此之外還要小心theta decay(每日扣血量)</p>
 </blockquote>
-<h1><a class="header" href="#slack" id="slack">Slack</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="slack"><a class="header" href="#slack">Slack</a></h1>
 <p>John Doe, [09.09.20 10:02]</p>
 <blockquote>
 <p>slack 明明蠻多人用的 是因為免費版太好用 所以營收都拉不起來嗎？</p>
@@ -1260,12 +1254,12 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <p>當然主要還是他跟他的對手其實沒有太大的不可取代差異，而且它的對手還免費套裝送，讓他很難有大幅成長的空間，還是一堆公司是免費仔在用</p>
 <p>Slack Technologies二季度付費客户超過13萬家，同比增長30%；年經常性收入超過10萬美元的付費客户985家，同比增長37%；使用共享渠道的付費客户超過5.2萬户，比上季度末的4.1萬多户有所增長；超過38萬家機構使用免費或付費訂閲計劃，同比增長超200%。</p>
 </blockquote>
-<h1><a class="header" href="#群友分享部份美股今年價格重點變化" id="群友分享部份美股今年價格重點變化">群友分享部份美股今年價格重點變化</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="群友分享部份美股今年價格重點變化"><a class="header" href="#群友分享部份美股今年價格重點變化">群友分享部份美股今年價格重點變化</a></h1>
 <p>原文：<a href="https://t.me/GooayeUSA/133480">https://t.me/GooayeUSA/133480</a></p>
 <p>Risotto 好吃, [09.09.20 23:20]</p>
 <p><img src="2020-week37/./sharing-some-important-trends-001.jpg" alt="" /></p>
-<h1><a class="header" href="#2020-年第-36-週-831906" id="2020-年第-36-週-831906">2020 年第 36 週 (8/31~9/06)</a></h1>
-<h2><a class="header" href="#本週收錄-4" id="本週收錄-4">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-36-週-831906"><a class="header" href="#2020-年第-36-週-831906">2020 年第 36 週 (8/31~9/06)</a></h1>
+<h2 id="本週收錄-4"><a class="header" href="#本週收錄-4">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week36/./graphcore.html">Graphcore</a></li>
 <li><a href="2020-week36/./macroeconomics.html">總體經濟</a></li>
@@ -1283,7 +1277,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <li><a href="2020-week36/./tsla-split.html">TSLA 拆分後分析</a></li>
 <li><a href="2020-week36/./vti-or-voo.html">主委：VOO 沒特斯拉</a></li>
 </ul>
-<h1><a class="header" href="#graphcore" id="graphcore">Graphcore</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="graphcore"><a class="header" href="#graphcore">Graphcore</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/110618">https://t.me/GooayeUSA/110618</a></p>
 <p>DY CHENG, [31.08.20 15:25]</p>
 <blockquote>
@@ -1341,7 +1335,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <blockquote>
 <p>賣出兩顆  還是美國國家實驗室買的  一顆2Musd的樣子  不過他們二代改變方法了  成本應該會下降</p>
 </blockquote>
-<h1><a class="header" href="#總體經濟" id="總體經濟">總體經濟</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="總體經濟"><a class="header" href="#總體經濟">總體經濟</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/110357">https://t.me/GooayeUSA/110357</a></p>
 <p>VegeChicken, [31.08.20 11:41]</p>
 <blockquote>
@@ -1380,7 +1374,7 @@ https://technews.tw/2020/03/10/the-5th-generation-waymo-driver/</p>
 <p>也謝謝分享，第一次知道還可以用銀行緊縮企業貸款標準的比例來觀察</p>
 <p><a href="https://www.macromicro.me/charts/1241/us-bank-net-percent-tight-loan">財經 M 平方 - 美國-國內銀行緊縮企業貸款標準淨比例</a></p>
 </blockquote>
-<h1><a class="header" href="#大麻股標的" id="大麻股標的">大麻股標的</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大麻股標的"><a class="header" href="#大麻股標的">大麻股標的</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/110393">https://t.me/GooayeUSA/110393</a></p>
 <p>Louis(應), [31.08.20 12:18]</p>
 <blockquote>
@@ -1403,7 +1397,7 @@ TLRY-醫用大麻及大麻素研究、種植、生產、分銷，一條龍公司
 <p>註：上一波爆炒爆空就是2018年加拿大宣佈全面合法化。
 註：CBD(大麻二酚)在美國跟保健食品概念一樣，保健你的身心(ECS身心系統的發現)</p>
 </blockquote>
-<h1><a class="header" href="#每個人都買-sp-500-會發生啥事" id="每個人都買-sp-500-會發生啥事">每個人都買 S&amp;P 500 會發生啥事？</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="每個人都買-sp-500-會發生啥事"><a class="header" href="#每個人都買-sp-500-會發生啥事">每個人都買 S&amp;P 500 會發生啥事？</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/113762">https://t.me/GooayeUSA/113762</a></p>
 <p>Meng, [01.09.20 21:23]</p>
 <blockquote>
@@ -1429,7 +1423,7 @@ TLRY-醫用大麻及大麻素研究、種植、生產、分銷，一條龍公司
 <blockquote>
 <p>是阿，就搬磚一樣</p>
 </blockquote>
-<h1><a class="header" href="#shll" id="shll">SHLL</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="shll"><a class="header" href="#shll">SHLL</a></h1>
 <p>原討論串開頭：https://t.me/GooayeUSA/117215</p>
 <p>Ricky Peng, [02.09.20 22:49]</p>
 <blockquote>
@@ -1443,7 +1437,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <p>近期應還是集中在合併與訂單吧？假若最近是訂單消息刺激的話，應只是開始，而Hyliion量產與交付期也比太多電動車公司快太多，但太多賭徒，調整應該可以很厲害 😅？</p>
 <p>有些抖了，想下車又想堅持信仰 🤦🏽‍♂️</p>
 </blockquote>
-<h1><a class="header" href="#複委託手續費" id="複委託手續費">複委託手續費</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="複委託手續費"><a class="header" href="#複委託手續費">複委託手續費</a></h1>
 <p>原串：<a href="https://t.me/GooayeUSA/115072">https://t.me/GooayeUSA/115072</a></p>
 <p>Eason Zhang, [02.09.20 01:51]</p>
 <blockquote>
@@ -1469,7 +1463,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>PTT 有Broker板 可以徵複委託談手續費</p>
 </blockquote>
-<h1><a class="header" href="#ft-出金手續費" id="ft-出金手續費">FT 出金手續費</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ft-出金手續費"><a class="header" href="#ft-出金手續費">FT 出金手續費</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/119499">https://t.me/GooayeUSA/119499</a></p>
 <p>Huang Edison, [03.09.20 16:37]</p>
 <blockquote>
@@ -1492,7 +1486,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <p>許多券商在匯回資金時都會額外收取手續費，從10美金、20美金到50美金不等，</p>
 <p>雖然不是大錢，但Firstrade的35美金算是收相對中等偏高一點，屬於它的缺點之一。</p>
 </blockquote>
-<h1><a class="header" href="#etf-避險與債券" id="etf-避險與債券">ETF 避險與債券</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="etf-避險與債券"><a class="header" href="#etf-避險與債券">ETF 避險與債券</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/119325">https://t.me/GooayeUSA/119325</a></p>
 <p>MK H, [03.09.20 15:16]</p>
 <blockquote>
@@ -1530,8 +1524,8 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>老實說REITS不適合避險，這次疫情Retail REITS大部份都在砍股利，現在看的Dividend yield這麼高，是因為股價砍太低了，TIPS發的年期太短，散戶最適合的配置商品建議還是大型的債券ETF，全市場BND、投資級LQD、高收益HYG</p>
 </blockquote>
-<h1><a class="header" href="#電匯到國外券商" id="電匯到國外券商">電匯到國外券商</a></h1>
-<h2><a class="header" href="#玉山銀行" id="玉山銀行">玉山銀行</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="電匯到國外券商"><a class="header" href="#電匯到國外券商">電匯到國外券商</a></h1>
+<h2 id="玉山銀行"><a class="header" href="#玉山銀行">玉山銀行</a></h2>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/119861">https://t.me/GooayeUSA/119861</a></p>
 <p>Catherine C, [03.09.20 19:40]</p>
 <blockquote>
@@ -1555,7 +1549,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>遇到同樣情形，但在國泰世華跟台銀都沒這狀況，且已經去分行3次，明天要去第4次，如果想嘗試玉山客服的人可以用心感受</p>
 </blockquote>
-<h2><a class="header" href="#永豐銀行" id="永豐銀行">永豐銀行</a></h2>
+<h2 id="永豐銀行"><a class="header" href="#永豐銀行">永豐銀行</a></h2>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/119903">https://t.me/GooayeUSA/119903</a></p>
 <p>J, [03.09.20 20:04]</p>
 <blockquote>
@@ -1567,11 +1561,11 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <p>實際大概扣四十幾鎂</p>
 <p>直接扣外幣戶 不夠再扣台幣</p>
 </blockquote>
-<h2><a class="header" href="#華南銀行" id="華南銀行">華南銀行</a></h2>
+<h2 id="華南銀行"><a class="header" href="#華南銀行">華南銀行</a></h2>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/119919">https://t.me/GooayeUSA/119919</a></p>
 <p>Inca Inca, [03.09.20 20:11]</p>
 <blockquote>
-<p>小資族用ft 華南匯10萬台幣 </p>
+<p>小資族用ft 華南匯10萬台幣</p>
 <p>700全額到 供參考</p>
 </blockquote>
 <p>Tsung Yen Ho, [03.09.20 20:20]</p>
@@ -1602,7 +1596,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>華南行員自己也很疑惑..為什麼網銀比較貴，這就是公股厲害的地方</p>
 </blockquote>
-<h1><a class="header" href="#spot" id="spot">SPOT</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="spot"><a class="header" href="#spot">SPOT</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/118868">https://t.me/GooayeUSA/118868</a></p>
 <p>Yen Cheng Chen, [03.09.20 12:04]</p>
 <blockquote>
@@ -1636,7 +1630,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>SPOT 會考慮他是因為 market cap 才 50B 他只要能顧好一個不大眾的市場，就能發財，但現在自雷，所以未來難說</p>
 </blockquote>
-<h1><a class="header" href="#93-美股崩盤之鮪魚又爆炸啦" id="93-美股崩盤之鮪魚又爆炸啦">9/3 美股崩盤之鮪魚又爆炸啦</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="93-美股崩盤之鮪魚又爆炸啦"><a class="header" href="#93-美股崩盤之鮪魚又爆炸啦">9/3 美股崩盤之鮪魚又爆炸啦</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/120191">https://t.me/GooayeUSA/120191</a></p>
 <p>J, [03.09.20 21:37]</p>
 <blockquote>
@@ -1759,7 +1753,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>乾 鮪魚悲歌再度上演</p>
 </blockquote>
-<h1><a class="header" href="#非農與-adp-就業的差別" id="非農與-adp-就業的差別">非農與 ADP 就業的差別</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="非農與-adp-就業的差別"><a class="header" href="#非農與-adp-就業的差別">非農與 ADP 就業的差別</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/123082">https://t.me/GooayeUSA/123082</a></p>
 <p>VegeChicken, [04.09.20 15:39]</p>
 <p><img src="2020-week36/./adp-001.jpg" alt="" /></p>
@@ -1767,7 +1761,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <p>科普一下，風災對非農影響更甚於 ADP，個人看法一樣是會低於預期。</p>
 <p>但老話是：別因一個數據的起伏而看漲跌，數據短期只是被拿來當做修正或加碼的理由。</p>
 </blockquote>
-<h1><a class="header" href="#tqqq-vs-nvda" id="tqqq-vs-nvda">TQQQ vs NVDA</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tqqq-vs-nvda"><a class="header" href="#tqqq-vs-nvda">TQQQ vs NVDA</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/123407">https://t.me/GooayeUSA/123407</a></p>
 <p>Eric Chuang, [04.09.20 17:59]
 <img src="2020-week36/./tqqq-vs-nvda-001.jpg" alt="" /></p>
@@ -1785,7 +1779,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <blockquote>
 <p>請教一下 大家提到的內扣扣血 我一直搞不是很懂會體現在股票現貨市場的哪裡？ 是指淨值往下降造成溢價過大嗎？還是說扣血會扣在現值上面？ 現值應該是市場供需決定的不是嗎</p>
 </blockquote>
-<h1><a class="header" href="#tsla-拆分後分析" id="tsla-拆分後分析">TSLA 拆分後分析</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tsla-拆分後分析"><a class="header" href="#tsla-拆分後分析">TSLA 拆分後分析</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/123854">https://t.me/GooayeUSA/123854</a></p>
 <p>Renee, [04.09.20 21:20]</p>
 <blockquote>
@@ -1795,7 +1789,7 @@ Hyliion畫出來的夢挺美的，不知道有沒有業內的人可以分享一�
 <p>除了這次減持的Baillie Gifford外，橋水基金也曾在2020Q2減持特斯拉，減持比例為44%。</p>
 <p>「特斯拉股價大幅上漲，意味着我們需要減持。我們打算在未來的許多年裏都保持為特斯拉的股東，我們對公司的未來仍非常樂觀。如果特斯拉的股價出現大幅下滑，我們仍將非常樂意看見這樣的加倉機會。」——Baillie Gifford</p>
 </blockquote>
-<h1><a class="header" href="#主委voo-沒特斯拉" id="主委voo-沒特斯拉">主委：VOO 沒特斯拉</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="主委voo-沒特斯拉"><a class="header" href="#主委voo-沒特斯拉">主委：VOO 沒特斯拉</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/126629">https://t.me/GooayeUSA/126629</a></p>
 <p>Love GG+, [05.09.20 20:16]</p>
 <blockquote>
@@ -1969,8 +1963,8 @@ VTI 涵蓋全美，而 VOO 是人為選擇的 500 大
 <blockquote>
 <p>有達標喔</p>
 </blockquote>
-<h1><a class="header" href="#2020-年第-35-週-824830" id="2020-年第-35-週-824830">2020 年第 35 週 (8/24~8/30)</a></h1>
-<h2><a class="header" href="#本週收錄-5" id="本週收錄-5">本週收錄</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2020-年第-35-週-824830"><a class="header" href="#2020-年第-35-週-824830">2020 年第 35 週 (8/24~8/30)</a></h1>
+<h2 id="本週收錄-5"><a class="header" href="#本週收錄-5">本週收錄</a></h2>
 <ul>
 <li><a href="2020-week35/./eric-cdn-share.html">Eric 大的 CDN 分享</a></li>
 <li><a href="2020-week35/./etoro-cash-out.html">eToro 出金分享</a></li>
@@ -1987,7 +1981,7 @@ VTI 涵蓋全美，而 VOO 是人為選擇的 500 大
 <li><a href="2020-week35/./nvda-advantages.html">NVDA 的優勢</a></li>
 <li><a href="2020-week35/./how-to-read-report.html">財報怎麼看</a></li>
 </ul>
-<h1><a class="header" href="#eric-大-cdn-分享" id="eric-大-cdn-分享">Eric 大 CDN 分享</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="eric-大-cdn-分享"><a class="header" href="#eric-大-cdn-分享">Eric 大 CDN 分享</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/100855">https://t.me/GooayeUSA/100855</a></p>
 <p>Eric Chuang, [26.08.20 02:13]</p>
 <blockquote>
@@ -2134,8 +2128,8 @@ Fastly/ cloudflare 的客群是用aws/azure/google buildup SaaS，但希望透�
 <blockquote>
 <p>有好幾層的機器人偵測，這也是門藝術</p>
 </blockquote>
-<h1><a class="header" href="#etoro-出金分享" id="etoro-出金分享">eToro 出金分享</a></h1>
-<h2><a class="header" href="#20200826" id="20200826">2020/08/26</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="etoro-出金分享"><a class="header" href="#etoro-出金分享">eToro 出金分享</a></h1>
+<h2 id="20200826"><a class="header" href="#20200826">2020/08/26</a></h2>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/106132">https://t.me/GooayeUSA/106132</a></p>
 <p>Abby Chang, [28.08.20 09:24]</p>
 <blockquote>
@@ -2143,12 +2137,12 @@ Fastly/ cloudflare 的客群是用aws/azure/google buildup SaaS，但希望透�
 8/7 用國泰KOKO入金200美元 (信用卡帳單已於8/20繳清)
 8/10 用台新飛狗入金兩筆共6000美元 (信用卡帳單未繳)</p>
 <p>8/26 申請出金6619.27美元
-8/27 eToro出金狀態顯示&quot;部分審核&quot;，用台新app確認6000美元已被刷退。
+8/27 eToro出金狀態顯示"部分審核"，用台新app確認6000美元已被刷退。
 國泰的沒有刷退，剩下的不知道是出金失敗還是要等電匯。
 8/28 剩下的614.27(-5美手續費)元，以電匯方式出金，還沒收到退款不知道是否會被中轉行再扣一次手續費。</p>
 <p>PS: 鮪魚的出金狀態i18n沒做好捏...不要因為資金撤出就醬子XD</p>
 </blockquote>
-<h2><a class="header" href="#20200827" id="20200827">2020/08/27</a></h2>
+<h2 id="20200827"><a class="header" href="#20200827">2020/08/27</a></h2>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/103712">https://t.me/GooayeUSA/103712</a></p>
 <p>Chen Chihsun, [27.08.20 09:53]</p>
 <blockquote>
@@ -2181,7 +2175,7 @@ ETORO說手續費5元~數位銀行說手續費6.82元~不過我實際上被扣�
 <blockquote>
 <p>etoro總資產超過2萬5美元 出金不用錢的樣子</p>
 </blockquote>
-<h1><a class="header" href="#td-開戶" id="td-開戶">TD 開戶</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="td-開戶"><a class="header" href="#td-開戶">TD 開戶</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/102152">https://t.me/GooayeUSA/102152</a></p>
 <p>Randy Yang (21:06)</p>
 <blockquote>
@@ -2196,7 +2190,7 @@ TD開戶一般都需多久才會接到核準通知？  我收到的email說要5�
 <blockquote>
 <p>7/18申請，8/25通知開好</p>
 </blockquote>
-<h1><a class="header" href="#台灣人在美國花旗開戶" id="台灣人在美國花旗開戶">台灣人在美國花旗開戶</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="台灣人在美國花旗開戶"><a class="header" href="#台灣人在美國花旗開戶">台灣人在美國花旗開戶</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/103067">https://t.me/GooayeUSA/103067</a></p>
 <p>Vero Hsu, [27.08.20 00:28]</p>
 <blockquote>
@@ -2231,7 +2225,7 @@ TD開戶一般都需多久才會接到核準通知？  我收到的email說要5�
 <p>當然如果只會去一次，去紐約最理想。因為台灣花旗之前曾因不明原因拒絕幫加州開戶的花旗做全球速匯設定，詳情可看銀行版。紐約州的沒聽說會被擋。</p>
 <p>然後TD/FT用ACH入金都免手續費，還可以設定多個帳戶，很方便資金進出。</p>
 </blockquote>
-<h1><a class="header" href="#如何追蹤長期績效" id="如何追蹤長期績效">如何追蹤長期績效</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="如何追蹤長期績效"><a class="header" href="#如何追蹤長期績效">如何追蹤長期績效</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/103192">https://t.me/GooayeUSA/103192</a></p>
 <p>13, [27.08.20 01:07]</p>
 <blockquote>
@@ -2264,7 +2258,7 @@ TD開戶一般都需多久才會接到核準通知？  我收到的email說要5�
 <p><a href="https://alternative.me/banktivity">https://alternative.me/banktivity</a></p>
 <p>可以參考這個。Banktivity今年因為Yahoo API改了所以股價無法自動更新，還有一些銀行不再提供sync服務，已經沒有往年好用了。去年以前是電腦一打開，所有銀行明細跟股價全部自動更新完畢，非常美好⋯</p>
 </blockquote>
-<h1><a class="header" href="#主委選前若見到修正就要先跑了" id="主委選前若見到修正就要先跑了">主委：選前若見到修正就要先跑了</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="主委選前若見到修正就要先跑了"><a class="header" href="#主委選前若見到修正就要先跑了">主委：選前若見到修正就要先跑了</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/103936">https://t.me/GooayeUSA/103936</a></p>
 <p>Miula, [27.08.20 12:18]</p>
 <blockquote>
@@ -2322,14 +2316,14 @@ TD開戶一般都需多久才會接到核準通知？  我收到的email說要5�
 <blockquote>
 <p>我個人也猜想殺球會在FED這邊發出</p>
 </blockquote>
-<h1><a class="header" href="#ib-好處" id="ib-好處">IB 好處</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ib-好處"><a class="header" href="#ib-好處">IB 好處</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/104556">https://t.me/GooayeUSA/104556</a></p>
 <p>GS9, [27.08.20 18:23]</p>
 <blockquote>
 <p>IB綜合來說絕對是最好
-資產10萬美以下 
-月費10美 但可以抵交易手續費 
-資產10萬美以上 
+資產10萬美以下
+月費10美 但可以抵交易手續費
+資產10萬美以上
 10美月費就免收 但一樣收交易手續費</p>
 <p>手續費也不貴 0.0035/股
 每筆最低收 0.35美
@@ -2343,7 +2337,7 @@ IB借越多越便宜 10萬美以內 1.6%
 <p>像什麼老虎 富途 雪球都是IB的下手券商 直接開ib就好 幹嘛開下手</p>
 <p>另外出金每月一次免手續費</p>
 </blockquote>
-<h1><a class="header" href="#主委創新高絕對不賣--bigc" id="主委創新高絕對不賣--bigc">主委：創新高絕對不賣 &amp; BIGC</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="主委創新高絕對不賣--bigc"><a class="header" href="#主委創新高絕對不賣--bigc">主委：創新高絕對不賣 &amp; BIGC</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/105286">https://t.me/GooayeUSA/105286</a></p>
 <p>MK H, [27.08.20 22:29]</p>
 <blockquote>
@@ -2393,7 +2387,7 @@ FSLY 我也是盤完才敢加碼</p>
 <blockquote>
 <p>阿也不一定要照我的，有些人停利就是不管高低點，反正就一天賣一股，都可以啦~~~建議自己實驗看看找到自己的方式</p>
 </blockquote>
-<h1><a class="header" href="#docu" id="docu">DOCU</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="docu"><a class="header" href="#docu">DOCU</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/107834">https://t.me/GooayeUSA/107834</a></p>
 <p>Vero Hsu, [28.08.20 22:38]</p>
 <blockquote>
@@ -2477,7 +2471,7 @@ FSLY 我也是盤完才敢加碼</p>
 <p>兩家策略不太一樣。Docu是用低價吸引公司試用，如果公司業務規模變大再靠業務去推整體導入，同時花了部分精力去整合銷售系統（像sales force或是房地產.銀行相關系統的融合)希望採用的公司越來越離不開他。</p>
 <p>Adobe目前感覺比較是依靠軟體走訂閱制，不過優勢就牌子大。</p>
 </blockquote>
-<h1><a class="header" href="#rost" id="rost">ROST</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rost"><a class="header" href="#rost">ROST</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/108336">https://t.me/GooayeUSA/108336</a></p>
 <p>MK H, [29.08.20 01:52]</p>
 <blockquote>
@@ -2536,14 +2530,14 @@ FSLY 我也是盤完才敢加碼</p>
 <blockquote>
 <p>Ross為了減少店員以及裝潢成本
 才會給人蠻凌亂的感覺
-有點像全聯模式 請支援收銀 
+有點像全聯模式 請支援收銀
 來降低成本讓貨物帶來更大折扣</p>
 </blockquote>
 <p>Leila, [29.08.20 03:17]</p>
 <blockquote>
 <p>Ross去過一次就不會想再去了耶.... 上次去看衣服品質不太好然後很多都掉在地上,蠻亂的很像大清倉   但學生黨去應該可以撿到其他東西不錯的</p>
 </blockquote>
-<h1><a class="header" href="#ft-現金購買力與現金結餘的差別" id="ft-現金購買力與現金結餘的差別">FT 現金購買力與現金結餘的差別？</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ft-現金購買力與現金結餘的差別"><a class="header" href="#ft-現金購買力與現金結餘的差別">FT 現金購買力與現金結餘的差別？</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/108699">https://t.me/GooayeUSA/108699</a></p>
 <p>Boogeyman, [29.08.20 11:56]</p>
 <blockquote>
@@ -2561,7 +2555,7 @@ FSLY 我也是盤完才敢加碼</p>
 <blockquote>
 <p>現金購買力是你自己入金可用金額，融資購買力通常是現金購買力的兩倍，代表說你只要買現金購買力內就不會用到融資 總之不要想那麼多，你就看現金結餘，不想融資就不要買到0</p>
 </blockquote>
-<h1><a class="header" href="#本週被提及的標的" id="本週被提及的標的">本週被提及的標的</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="本週被提及的標的"><a class="header" href="#本週被提及的標的">本週被提及的標的</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/109326">https://t.me/GooayeUSA/109326</a></p>
 <p>Max, [29.08.20 23:16]</p>
 <blockquote>
@@ -2615,7 +2609,7 @@ FSLY 我也是盤完才敢加碼</p>
 <p>PACB:高專業不好懂的生技股，業務是基因定序，ARKK連續超過兩周買進代表極度看好，女股神團隊表示該公司近期宣布的新消息Sequel 2 平台產品，其效能將能屌打競爭對手Illumina，技術面目前股價位於短期高位呈微幅下降趨勢，可以等突破趨勢轉向上時再考慮比較保險。</p>
 <p>以上淺見若有錯誤煩請指正～</p>
 </blockquote>
-<h1><a class="header" href="#nvda-的優勢" id="nvda-的優勢">NVDA 的優勢</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nvda-的優勢"><a class="header" href="#nvda-的優勢">NVDA 的優勢</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/109600">https://t.me/GooayeUSA/109600</a></p>
 <p>Will Wu, [30.08.20 13:16]</p>
 <blockquote>
@@ -2663,7 +2657,7 @@ Model轉起來問題很多QQ</p>
 <blockquote>
 <p>openVINO平台支援很多intel cpu喔，桌機某些型號，嵌入式cpu，還有intel fpga產品線都有支援</p>
 </blockquote>
-<h1><a class="header" href="#財報怎麼看" id="財報怎麼看">財報怎麼看</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="財報怎麼看"><a class="header" href="#財報怎麼看">財報怎麼看</a></h1>
 <p>原討論串開頭：<a href="https://t.me/GooayeUSA/109711">https://t.me/GooayeUSA/109711</a></p>
 <p>宸宇, [30.08.20 15:48]</p>
 <blockquote>
@@ -2696,9 +2690,7 @@ Model轉起來問題很多QQ</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
 
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -2706,49 +2698,35 @@ Model轉起來問題很多QQ</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
 
-                
             </nav>
 
         </div>
 
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
-        
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
-        
-        
 
+    </div>
     </body>
 </html>
